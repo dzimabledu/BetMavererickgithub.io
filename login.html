@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+  <style>
+        
+        .modal-content .btn {
+      padding: 15px 30px; 
+      font-size: 18px; 
+    }
+
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 5px;
+      width: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center; 
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* Style for the BetMaverick link */
+    .betmaverick-logo {
+      display: block;
+      width: 300px; 
+      margin: 0 auto; 
+      padding: auto;
+    }
+
+    /* Center the buttons */
+    .modal-content button {
+      margin: 10px; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><a href="index.html"><img src="BetMaverick.png" alt="BetMaverick Logo" class="betmaverick-logo"></a></h1>
+    <h1>Login</h1>
+    <form id="loginForm" onsubmit="return validateFormAndShowModal()">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn">Login</button>
+      </div>
+    </form>
+    <p>Don't have an account? <a href="signup.html"><b>Sign up</b></a></p>
+  </div>
+
+  <!-- VIP Terms Modal -->
+  <div id="vipModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="hideVipTerms()">&times;</span>
+      <h2>VIP Terms and Conditions</h2>
+      <p>VIP access is available for a day at $4. After the day ends, you need to pay another $4 for continued access.</p>
+      <button onclick="acceptVip()" class="btn">Accept</button>
+      <button onclick="declineVip()" class="btn">Decline</button>
+    </div>
+  </div>
+
+  <script>
+    // Function to show the VIP terms modal
+    function showVipTerms() {
+      var modal = document.getElementById('vipModal');
+      modal.style.display = 'block';
+    }
+
+    // Function to hide the VIP terms modal
+    function hideVipTerms() {
+      var modal = document.getElementById('vipModal');
+      modal.style.display = 'none';
+    }
+
+    // Function to handle accepting VIP terms
+    function acceptVip() {
+      // Redirect to the payment page after accepting
+      window.location.href = 'payment.html';
+    }
+
+    // Function to handle declining VIP terms
+    function declineVip() {
+      // Redirect to the homepage after declining
+      window.location.href = 'index.html';
+    }
+
+    // Function to validate the login form and show modal
+    function validateFormAndShowModal() {
+      if (validateForm()) {
+        showVipTerms(); // Show modal if form is valid
+      }
+      return false; // Prevent default form submission
+    }
+
+    // Function to validate the login form
+    function validateForm() {
+      console.log('Validating form...');
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+      if (email.trim() === '' || password.trim() === '') {
+        alert('Please fill in all fields');
+        return false; // Prevent form submission
+      }
+      return true; // Allow form submission
+    }
+  </script>
+</body>
+</html>

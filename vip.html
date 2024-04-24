@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website Title</title>
+  <link rel="stylesheet" href="vip.css">
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .auth {
+      margin-left: auto;
+    }
+
+    .auth button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      background-color: #fff;
+      color: #333;
+      transition: background-color 0.3s ease;
+    }
+
+    .auth button:hover {
+      background-color: #eee;
+    }
+
+    .hero ul {
+      margin-left: 20px;
+    }
+
+    .hero ul li {
+      margin-bottom: 10px;
+    }
+
+    .vip-prediction .prediction-table {
+      margin-top: 20px;
+    }
+
+    .vip-prediction table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .vip-prediction th,
+    .vip-prediction td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .vip-prediction th {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Predictions</a></li>
+        <li><a href="vip.html">VIP</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="auth">
+      <button onclick="window.location.href='index.html'">Sign Out</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p>Welcome to the DAILY VIP page. Enjoy exclusive benefits and premium predictions.</p>
+      <h2>Features of VIP Membership</h2>
+      <ul>
+        <li>Access to premium predictions</li>
+        <li>Expert analysis and insights</li>
+        <li>Early access to predictions</li>
+        <li>Higher accuracy rate</li>
+      </ul>
+    </section>
+
+    <section class="vip-prediction">
+      <h2>Vip Predictions</h2>
+      <div class="prediction-table">
+        <table>
+          <thead>
+            <tr>
+              <th>League</th>
+              <th>Match</th>
+              <th>Prediction</th>
+              <th>Outcome</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Prediction 1</td>
+              <td>Rakow Czestochowa v Flora Tallinn</td>
+              <td>3-0</td>
+              <td> <img src="red.png" style="width: 20px; height: 20px;"></td>
+            </tr>
+            <tr>
+              <td>Prediction 2</td>
+              <td>Ballkani v Ludogorets Razgrad</td>
+              <td>	1-2</td>
+              <td> <img src="green.png" style="width: 20px; height: 20px;"></td>
+            </tr>
+            <tr>
+              <td>Prediction 3</td>
+              <td>KI Klaksvik v Ferencvarosi</td>
+              <td>	0-2</td>
+              <td> <img src="green.png" style="width: 20px; height: 20px;"></td>
+            </tr>
+            <tr>
+              <td>Prediction 4</td>
+              <td>Partizani Tirana v BATE Borisov</td>
+              <td>1-1</td>
+              <td> <img src="green.png" style="width: 20px; height: 20px;"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 BetMaverick. All rights reserved.</p>
+  </footer>
+</body>
+</html>

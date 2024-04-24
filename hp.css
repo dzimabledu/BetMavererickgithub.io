@@ -1,0 +1,227 @@
+/* Common Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  padding: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.small-logo {
+  height: 60px; /* Adjust the height as needed */
+  width: 140px;
+}
+
+
+
+/* Additional styling for the logo */
+.logo {
+  margin-right: 10px; 
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+}
+
+.auth a {
+  margin-left: 10px;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.auth a:hover {
+  background-color: #eee;
+}
+
+.hero {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 50px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #777;
+}
+
+.featured-predictions {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.featured-predictions h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.prediction-table {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.prediction-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.prediction-table th,
+.prediction-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.testimonials {
+  padding: 50px 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonials h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.testimonial {
+  margin-bottom: 40px;
+  flex-basis: 45%;
+  max-width: 400px;
+  margin-right: 90px; /* Add margin to create spacing between testimonial boxes */
+}
+
+.testimonial-box {
+  background-color: #f0f0f0;
+  padding: 30px; /* Adjust the padding as desired */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Adjust the width as desired */
+  max-width: 400px; /* Adjust the maximum width as desired */
+  margin: 0 auto; /* Center the testimonial boxes horizontally */
+}
+
+.testimonial-box p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.testimonial-box .author {
+  font-size: 16px;
+  font-weight: bold;
+  color: #777;
+}
+
+.button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  color: #777;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 30px;
+  }
+
+  .featured-predictions {
+    padding: 30px;
+  }
+
+  .prediction-table {
+    max-width: 600px;
+  }
+
+  .testimonials {
+    padding: 20px;
+  }
+
+  .testimonial {
+    flex-basis: 100%;
+    margin-right: 0; /* Remove the right margin for full width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .featured-predictions h2 {
+    font-size: 24px;
+  }
+
+  .testimonial-box p {
+    font-size: 16px;
+  }
+}

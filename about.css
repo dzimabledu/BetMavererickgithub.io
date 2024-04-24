@@ -1,0 +1,152 @@
+/* Common Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li:first-child {
+    margin-left: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .nav-auth {
+    margin-left: auto;
+  }
+  
+  .nav-auth a {
+    margin-left: 10px;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-auth a:hover {
+    background-color: #eee;
+  }
+  
+  .hero {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    color: #777;
+  }
+  
+  .team-members {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .team-members h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .member {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+  }
+  
+  .member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .member h3 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .member p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    color: #777;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+    .hero {
+      padding: 30px;
+    }
+  
+    .team-members {
+      padding: 30px;
+    }
+  
+    .member {
+      margin: 20px 0;
+    }
+  
+    .member img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .member h3 {
+      font-size: 20px;
+    }
+  
+    .member p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 24px;
+    }
+  
+    .hero p {
+      font-size: 16px;
+    }
+  
+    .team-members h2 {
+      font-size: 24px;
+    }
+  }
+  

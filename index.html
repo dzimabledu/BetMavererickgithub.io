@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BetMaverick</title>
+  <link rel="stylesheet" href="hp.css">
+  <style>
+    .hero {
+      position: relative;
+      height: 300px; /* Set the desired height for the hero section */
+    }
+
+    .hero img {
+      position: absolute; /* Position the image absolutely */
+      top: 0; /* Move the image to the top */
+      left: 0; /* Move the image to the left */
+      width: 100%; /* Make the image width cover the entire hero section */
+      height: 100%; /* Make the image height cover the entire hero section */
+      object-fit: cover; /* Ensure the image covers the entire space while maintaining aspect ratio */
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      z-index: 1;
+    }
+
+    .hero-content h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .hero-content a.button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #d3a91e;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero-content a.button:hover {
+      background-color: #0d0f10;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="BetMaverick.png" alt="BetMaverick Logo" class="small-logo">
+      <ul>
+       <li><a href="hp.html">Home</a></li>
+        <li><a href="#featured-predictions">Predictions</a></li>
+        <li><a href="vipaccesslogin.html">VIP</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      
+      <div class="auth">
+        <a href="login.html" class="btn">Login</a>
+        <a href="signup.html" class="btn">Sign Up</a>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const predictionsLink = document.querySelector("a[href='#featured-predictions']");
+    
+          predictionsLink.addEventListener("click", function(event) {
+            event.preventDefault();
+            const targetSection = document.getElementById("featured-predictions");
+            targetSection.scrollIntoView({ behavior: "smooth" });
+          });
+        });
+      </script>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="image (2).png" alt="Hero Image"> <!-- Replace 'your-image.jpg' with the path to your image -->
+      <div class="hero-content">
+        <h1>Welcome to BetMaverick</h1>
+        <p>Get accurate predictions and insightful statistics for various sports events.</p>
+        <a href="vipaccesslogin.html" class="button">VIP ACCESS</a>
+      </div>
+    </section>
+
+    <section class="featured-predictions" id="featured-predictions">
+        <h2>Todays Free Predictions</h2>
+        <div class="prediction-table">
+          <table>
+            <thead>
+              <tr>
+                <th>League</th>
+                <th>Match</th>
+                <th>Prediction</th>
+                <th>Outcome</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> EPL </td>
+                <td>Astana v Dinamo Tbilisi</td>
+                <td>2-1</td>
+                <td> <img src="green.png" style="width: 20px; height: 20px;"></td>
+                </tr>
+                
+              <tr>
+                <td>Prediction 2</td>
+                <td>Urartu v Zrinjski Mostar</td>
+                <td>1-1</td>
+                <td> <img src="green.png" style="width: 20px; height: 20px;"></td>
+              </tr>
+              <tr>
+                <td>Prediction 3</td>
+                <td>Lincoln Red Imps v Qarabagh</td>
+                <td>	1-2</td>
+                <td> <img src="green.png" style="width: 20px; height: 20px;"></td>
+              </tr>
+              <tr>
+                <td>Prediction 4</td>
+                <td>Zalgiris v Struga Trim Lum</td>
+                <td>	2-0</td>
+                <td> <img src="red.png" style="width: 20px; height: 20px;"></td>
+              </tr>
+              <tr>
+                <td>Prediction 5</td>
+                <td>Hamrun Spartans v Maccabi Haifa</td>
+                <td>0-2</td>
+                <td> <img src="green.png" style="width: 20px; height: 20px;"></td>
+              </tr>
+              <tr>
+                <td>Prediction 6</td>
+                <td>Olimpija v Valmiera</td>
+                <td>2-0</td>
+                <td> <img src="green.png" style="width: 20px; height: 20px;"></td>
+              </tr>
+              <tr>
+                <td>Prediction 7</td>
+                <td>Rakow Czestochowa v Flora Tallinn</td>
+                <td>3-0</td>
+                <td> <img src="red.png" style="width: 20px; height: 20px;"></td>
+              </tr>
+              <tr>
+                <td>Prediction 8</td>
+                <td>Ballkani v Ludogorets Razgrad</td>
+                <td>	1-2</td>
+                <td> <img src="green.png" style="width: 20px; height: 20px;"></td>
+              </tr>
+              <tr>
+                <td>Prediction 9</td>
+                <td>KI Klaksvik v Ferencvarosi</td>
+                <td>	0-2</td>
+                <td> <img src="green.png" style="width: 20px; height: 20px;"></td>
+              </tr>
+              <tr>
+                <td>Prediction 10</td>
+                <td>Partizani Tirana v BATE Borisov</td>
+                <td>1-1</td>
+                <td> <img src="green.png" style="width: 20px; height: 20px;"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="featured-predictions" id="featured-predictions">
+        <h2>Yesterdays Predictions</h2>
+        <div class="prediction-table">
+          <table>
+            <thead>
+              <tr>
+                <th>League</th>
+                <th>Match</th>
+                <th>Prediction</th>
+                <th>Outcome</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> EPL </td>
+                <td>Astana v Dinamo Tbilisi</td>
+                <td>2-1</td>
+                <td> <img src="green.png" style="width: 20px; height: 20px;"></td>
+                </tr>
+                
+              <tr>
+                <td>Prediction 2</td>
+                <td>Urartu v Zrinjski Mostar</td>
+                <td>1-1</td>
+                <td> <img src="green.png" style="width: 20px; height: 20px;"></td>
+              </tr>
+              <tr>
+                <td>Prediction 3</td>
+                <td>Lincoln Red Imps v Qarabagh</td>
+                <td>	1-2</td>
+                <td> <img src="green.png" style="width: 20px; height: 20px;"></td>
+              </tr>
+              <tr>
+                <td>League One</td>
+                <td>Northampton v  Exeter</td>
+                <td>	1 - 1 </td>
+                <td> <img src="red.png" style="width: 20px; height: 20px;"></td>
+              </tr>
+              <tr>
+                <td>Trendyol Süper Lig</td>
+                <td>İstanbulspor v Fatih Karagümrük</td>
+                <td>1-2</td>
+                <td> <img src="green.png" style="width: 20px; height: 20px;"></td>
+              </tr>
+              <tr>
+                <td>First Division A</td>
+                <td>KRC Genk v Anderlecht</td>
+                <td>2 - 1</td>
+                <td> <img src="green.png" style="width: 20px; height: 20px;"></td>
+              </tr>
+              <tr>
+                <td>Eerste Divisie</td>
+                <td>ADO v Eindhoven</td>
+                <td>1 - 0</td>
+                <td> <img src="red.png" style="width: 20px; height: 20px;"></td>
+              </tr>
+              <tr>
+                <td>MLS</td>
+                <td>Atlanta v Cincinnati</td>
+                <td>	1 - 2</td>
+                <td> <img src="green.png" style="width: 20px; height: 20px;"></td>
+              </tr>
+              <tr>
+                <td>Championship</td>
+                <td>Leicester v West Brom</td>
+                <td>	2 - 1</td>
+                <td> <img src="green.png" style="width: 20px; height: 20px;"></td>
+              </tr>
+              <tr>
+                <td>Championship</td>
+                <td>Stoke v Plymouth</td>
+                <td>3 - 0</td>
+                <td> <img src="green.png" style="width: 20px; height: 20px;"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
+      <section class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+          <div class="testimonial-box">
+            <p>"BetMaverick is a money-making machine! Their accurate forecasts have helped me win big and increase my bankroll. Highly recommended!" </p>
+            <span class="author">Jacob Taylor</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-box">
+            <p>"Thanks to BetMaverick, I've turned my bets into consistent wins. Their predictions are on point, and I've made significant profits. Trustworthy and reliable!"</p>
+            <span class="author">Naledi Mabuza </span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-box">
+            <p>"I'm amazed by the accuracy of BetMaverick. Following their recommendations has boosted my winnings and made me a successful bettor. It's a game-changer!"</p>
+            <span class="author">Ava Thompson</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-box">
+            <p>"If you want to win money through sports betting, look no further. BetMaverick has helped me make profitable bets consistently. It's a surefire way to increase your earnings!"</p>
+            <span class="author">Oliver Parker</span>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-box">
+            <p>"Thanks to BetMaverick, I've gone from losses to consistent wins. Their insights are spot-on, and my profits speak for themselves. Trustworthy and game-changing!"</p>
+            <span class="author">Fatoumata Traoré </span>
+          </div>
+      </section>
+    </main>
+
+  
+    <footer>
+    <p>&copy; 2023 BetMaverick. All rights reserved.</p>
+  </footer>
+</body>
+</html>
